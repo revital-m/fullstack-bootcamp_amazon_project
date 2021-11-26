@@ -4,12 +4,25 @@
   src: url("../assets/fonts/AmazonUIFont-amazonember_rg-cc7ebaa05a2cd3b02c0929ac0475a44ab30b7efa._V2_.woff2");
 }
 
+/******************** var ********************/
+:root {
+  --orange-txt: #f08804;
+  --light-color-txt: #fff;
+  --dark-color-txt: #131921;
+  --light-gray-color-txt: #a7acb2;
+  --dark-gray-color-txt: #565959;
+}
+
+body {
+  font-family: amazon_ember_rg;
+}
+
 /******************** header ********************/
 header {
-  font-family: amazon_ember_rg;
-  color: white;
+  /* font-family: amazon_ember_rg; */
+  color: var(--light-color-txt);
   height: 6rem;
-  background: #131921;
+  background: var(--dark-color-txt);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,13 +30,13 @@ header {
 
 .header--sml-txt {
   font-size: 1.2rem;
-  color: white;
+  color: var(--light-color-txt);
 }
 
 .header--big-txt {
   font-size: 1.3rem;
   font-weight: bold;
-  color: white;
+  color: var(--light-color-txt);
 }
 
 /********** header left **********/
@@ -42,7 +55,7 @@ header {
 }
 
 .header-navbar__hover:hover {
-  border: 1px white solid;
+  border: 1px var(--light-color-txt) solid;
 }
 
 .header__left--location {
@@ -72,7 +85,7 @@ header {
   flex-direction: row;
   align-items: center;
   font-size: 1.5rem;
-  color: #131921;
+  color: var(--dark-color-txt);
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -94,7 +107,7 @@ header {
 
 .header__center--all:hover {
   background: #dadada;
-  color: #131921;
+  color: var(--dark-color-txt);
 }
 
 .header__center--all-items {
@@ -106,7 +119,7 @@ header {
 }
 
 .header__center--search {
-  background: white;
+  background: var(--light-color-txt);
   font-size: 1.5rem;
   padding: 1rem;
   z-index: 2;
@@ -161,7 +174,7 @@ header {
 
 .header__right--flags i,
 .header__right--account i {
-  color: #a7acb2;
+  color: var(--light-gray-color-txt);
   padding-left: 0.5rem;
   font-size: 1.5rem;
 }
@@ -182,7 +195,7 @@ header {
   position: absolute;
   top: 0.7rem;
   left: 2.7rem;
-  color: #f08804;
+  color: var(--orange-txt);
   font-size: 1.7rem;
 }
 
@@ -198,7 +211,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: amazon_ember_rg;
+  /* font-family: amazon_ember_rg; */
   padding: 0.2rem 0;
 }
 
@@ -209,7 +222,7 @@ header {
 
 .navbar--item a {
   font-size: 1.4rem;
-  color: white;
+  color: var(--light-color-txt);
   text-decoration: none;
 }
 
@@ -248,7 +261,7 @@ header {
 
 /******************** breadcrumbs ********************/
 .breadcrumbs {
-  font-family: amazon_ember_rg;
+  /* font-family: amazon_ember_rg; */
 
   padding-left: 4rem;
 }
@@ -256,7 +269,7 @@ header {
 .breadcrumbs a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #565959;
+  color: var(--dark-gray-color-txt);
 }
 
 .breadcrumbs a:hover {
@@ -265,6 +278,74 @@ header {
 
 .breadcrumbs i {
   font-size: 0.8rem;
-  color: #565959;
+  color: var(--dark-gray-color-txt);
   padding: 0.2rem;
+}
+
+/******************** main ********************/
+/********** main left **********/
+/* main {
+} */
+
+.main__left {
+  display: flex;
+  padding: 2rem 3rem;
+  position: sticky;
+}
+
+.main__left--sml {
+  padding: 4rem 5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main__left--sml > li {
+  list-style-type: none;
+}
+
+.main__left--sml > li > img {
+  border: 1px var(--light-gray-color-txt) solid;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.main__left--sml > li > img:hover {
+  border: 0.1rem var(--orange-txt) solid;
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--orange-txt);
+}
+
+.main__left--big--imgs {
+  position: absolute;
+  left: 8.4rem;
+  top: -0.8rem;
+  opacity: 0;
+}
+
+.main__left--sml > li:hover .main__left--big--imgs {
+  opacity: 1;
+}
+
+.main__left--big--imgs > img {
+  width: 49rem;
+  height: 45.3rem;
+  /* object-fit: cover; */
+}
+
+.main__left--big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__left--big--img > img {
+  width: 49rem;
+  height: 44rem;
+  object-fit: cover;
+}
+
+.main__left--big--txt {
+  color: var(--dark-gray-color-txt);
+  font-size: 1.4rem;
+  padding-top: 1rem;
 }
