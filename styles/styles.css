@@ -239,3 +239,32 @@ header {
 .navbar__right {
   margin-right: 1.5rem;
 }
+
+/******************** banner ********************/
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+/******************** breadcrumbs ********************/
+.breadcrumbs {
+  font-family: amazon_ember_rg;
+
+  padding-left: 4rem;
+}
+
+.breadcrumbs a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #565959;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs i {
+  font-size: 0.8rem;
+  color: #565959;
+  padding: 0.2rem;
+}
