@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/my_normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Amazon.com: 5 Pairs Womens Fuzzy Socks</title>
   </head>
   <body>
     <header>
+      <!--------------------- header__left --------------------->
       <div class="header__left">
         <div>
-          <a href="https://www.amazon.com/ref=nav_logo" target="_blank"
+          <a href="https://www.amazon.com/" target="_blank"
             ><div class="header-navbar__hover header__left--icon"></div
           ></a>
         </div>
@@ -24,8 +31,64 @@
           </div>
         </div>
       </div>
-      <div class="header__center">hsrhs</div>
-      <div class="header__right">bsxds</div>
+      <!--------------------- header__center --------------------->
+      <div class="header__center">
+        <div class="header__center--all">
+          All<i class="fas fa-sort-down"></i>
+        </div>
+        <label for="all"></label>
+        <select class="header__center--all-items" name="all" id="all">
+          <option selected="selected" value="all_departments">
+            All Departments
+          </option>
+          <option value="arts_&_crafts">Arts & Crafts</option>
+          <option value="automotive">Automotive</option>
+          <option value="baby">Baby</option>
+          <option value="beauty_&_personal_care">Beauty & Personal Care</option>
+          <option value="books">Books</option>
+          <option value="computers">Computers</option>
+          <option value="digital_music">Digital Music</option>
+          <option value="electronics">Electronics</option>
+          <option value="kindle_store">Kindle Store</option>
+          <option value="prime_video">Prime Video</option>
+          <option value="women's_fashion">Women's Fashion</option>
+          <option value="men's_fashion">Men's Fashion</option>
+          <option value="girl's_fashion">Girl's Fashion</option>
+          <option value="boy's_fashion">Boy's Fashion</option>
+          <option value="deals">Deals</option>
+          <option value="health_&_household">Health & Household</option>
+          <option value="home_&_kitchen">Home & Kitchen</option>
+          <option value="industrial_&_scientific">
+            Industrial & Scientific
+          </option>
+          <option value="luggage">Luggage</option>
+          <option value="movies_&_tv">Movies & TV</option>
+          <option value="music_cds_&_vinyl">Music CDs & Vinyl</option>
+          <option value="pet_supplies">Pet Supplies</option>
+          <option value="software">Software</option>
+          <option value="sports_&_outdoors">Sports & Outdoors</option>
+          <option value="tools_&_home_improvement">
+            Tools & Home Improvement
+          </option>
+          <option value="toys_&_games">Toys & Games</option>
+          <option value="video_games">Video Games</option>
+        </select>
+        <label for="search"></label>
+        <textarea
+          class="header__center--search"
+          name="search"
+          id="search"
+          cols="110"
+          rows="1"
+        ></textarea>
+        <div class="header__center--search-bg">
+          <a href="https://www.amazon.com/" target="_blank"
+            ><div class="header__center--search-icon"></div
+          ></a>
+        </div>
+      </div>
+      <!--------------------- header__right --------------------->
+      <div class="header__right"></div>
     </header>
   </body>
 </html>
