@@ -730,6 +730,7 @@ main {
   padding-top: 2rem;
 }
 
+/********** carusel top **********/
 .carusel__top {
   display: flex;
   justify-content: space-between;
@@ -748,10 +749,33 @@ main {
   text-decoration: none;
 }
 
+.carusel__top--left > a:hover {
+  color: var(--dark-color-txt);
+}
+
 .carusel__top--left > a > i {
   color: var(--light-gray-color-txt);
 }
 
+.carusel__top--left > a:hover i {
+  color: var(--dark-color-txt);
+}
+
 .carusel__top--right {
   font-size: 1.5rem;
+}
+
+/********** carusel bottom **********/
+.carusel__bottom {
+  display: flex;
+}
+
+.carusel__bottom--btn {
+  background: var(--light-color-txt);
+  font-size: 1.5rem;
+  color: var(--dark-gray-color-txt);
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--very-light-gray-color-txt);
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--very-light-gray-color-txt);
+  border-radius: 0.5rem;
 }
