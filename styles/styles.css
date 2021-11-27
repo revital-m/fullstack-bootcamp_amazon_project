@@ -807,6 +807,7 @@ main {
 .carusel__bottom--stars,
 .carusel__bottom--price {
   display: flex;
+  padding: 0.2rem 0;
 }
 
 .carusel__bottom--stars-icon-4 {
@@ -831,6 +832,7 @@ main {
   width: 5.4rem;
   height: 1.6rem;
   background: url("/assets/img/main_right_img/follow_me_icons.png") -18.4rem -18.2rem;
+  margin-top: 0.5rem;
 }
 
 .carusel__bottom--stars-num {
