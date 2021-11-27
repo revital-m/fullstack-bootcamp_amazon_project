@@ -40,6 +40,10 @@ header {
   color: var(--light-color-txt);
 }
 
+.header__links {
+  text-decoration: none;
+}
+
 /********** header left **********/
 .header__left {
   display: flex;
