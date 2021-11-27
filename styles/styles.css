@@ -11,6 +11,7 @@
   --light-color-txt: #fff;
   --dark-color-txt: #131921;
   --light-gray-color-txt: #a7acb2;
+  --very-light-gray-color-txt: #cbced2;
   --dark-gray-color-txt: #565959;
 }
 
@@ -378,7 +379,7 @@ main {
 }
 
 .main__center__up {
-  border-bottom: 1px solid var(--light-gray-color-txt);
+  border-bottom: 1px solid var(--very-light-gray-color-txt);
   padding-top: 2.5rem;
 }
 
@@ -488,7 +489,7 @@ main {
   width: 24.4rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--light-gray-color-txt);
+  border: 1px solid var(--very-light-gray-color-txt);
   border-radius: 1rem;
   padding: 2rem 2rem 1rem 2rem;
   font-size: 1.4rem;
@@ -550,8 +551,8 @@ main {
   padding: 0 0.4rem;
   cursor: pointer;
   width: max-content;
-  border: 1px solid var(--light-gray-color-txt);
-  box-shadow: 0.1rem 0.1rem 0.4rem var(--light-gray-color-txt);
+  border: 1px solid var(--very-light-gray-color-txt);
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--very-light-gray-color-txt);
   border-radius: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -643,7 +644,7 @@ main {
 .main__right--gift {
   display: flex;
   padding: 0.5rem 0 2rem 0;
-  border-bottom: 1px solid var(--light-gray-color-txt);
+  border-bottom: 1px solid var(--very-light-gray-color-txt);
 }
 
 .main__right--gift .main__center--dark-txt {
@@ -661,4 +662,63 @@ main {
   box-shadow: 0.1rem 0.1rem 0.4rem var(--light-gray-color-txt);
   border-radius: 0.5rem;
   align-self: flex-start;
+}
+
+/* contact */
+.main__right--contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+.main__right--contact a {
+  padding-right: 0.5rem;
+}
+
+.main__right--contact .main__center--links {
+  font-size: 1.3rem;
+}
+
+.main__right--email-icon {
+  width: 2.4rem;
+  height: 1.8rem;
+  background: url("/assets/img/main_right_img/follow_me_icons.png") -25.5rem -22rem;
+}
+
+.main__right--facebook-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url("/assets/img/main_right_img/follow_me_icons.png") -23.6rem -15rem;
+}
+
+.main__right--twitter-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url("/assets/img/main_right_img/follow_me_icons.png") -19.2rem -10.4rem;
+}
+
+.main__right--pinterest-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url("/assets/img/main_right_img/follow_me_icons.png") -13.7rem -26.8rem;
+}
+
+/* sell */
+.main__right--sell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__right--sell > p {
+  font-size: 1.3rem;
+}
+
+.main__right--sell .main__right--btn {
+  border: 1px solid var(--very-light-gray-color-txt);
+  box-shadow: 0.1rem 0.1rem 0.4rem var(--very-light-gray-color-txt);
+  background: var(--light-color-txt);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
 }
