@@ -722,3 +722,36 @@ main {
   border-radius: 0.5rem;
   padding: 0.8rem;
 }
+
+/******************** carusel ********************/
+.carusel {
+  border-top: 1px solid var(--very-light-gray-color-txt);
+  margin: 3rem;
+  padding-top: 2rem;
+}
+
+.carusel__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.carusel__top--left h2 {
+  font-size: 2.5rem;
+  color: var(--dark-color-txt);
+  padding-bottom: 1rem;
+}
+
+.carusel__top--left > a {
+  font-size: 1.1rem;
+  color: var(--dark-gray-color-txt);
+  text-decoration: none;
+}
+
+.carusel__top--left > a > i {
+  color: var(--light-gray-color-txt);
+}
+
+.carusel__top--right {
+  font-size: 1.5rem;
+}
