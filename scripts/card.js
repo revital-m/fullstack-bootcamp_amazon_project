@@ -164,20 +164,43 @@ const cardInfo = document.querySelector(".carusel__bottom--info");
 let pageNum = 0;
 carusel(pageNum);
 
-function plusPage(num){
-    carusel(pageNum += num);
+const numOfPages = [1, 2, 3];
+
+function plusPage(num, idx) {
+  let currentPage = document.querySelector("#num_of_page");
+  let value = Number(currentPage.innerHTML);
+  value += idx;
+  if (value > numOfPages[numOfPages.length - 1]) {
+    value = numOfPages[numOfPages.length - 1];
+  } else if (value < 1) {
+    value = 1;
+  }
+  currentPage.innerHTML = value;
+
+  carusel((pageNum += num));
 }
 
-function carusel(pageIdx){
-    let mycards = document.querySelectorAll('.myCards');
+function carusel(pageIdx) {
+  let mycards = document.querySelectorAll(".myCards");
 
-    if (pageIdx > cards.length - 6) {pageIdx = 0}
-    if (pageIdx < 1) {pageIdx = cards.length - 7}
+  if (pageIdx > cards.length - 6) {
+    pageIdx = 0;
+  }
+  if (pageIdx < 1) {
+    pageIdx = cards.length - 7;
+  }
 
-    for (let i = 0; i < mycards.length; i++) {
-        mycards[i].style.display = "none";
-    }
-    for (let j = pageIdx; j < pageIdx+6; j++) {
-        mycards[j].style.display = "block";
-    }
+  for (let i = 0; i < mycards.length; i++) {
+    mycards[i].style.display = "none";
+  }
+  for (let j = pageIdx; j < pageIdx + 6; j++) {
+    mycards[j].style.display = "block";
+  }
+}
+
+function incrementCart() {
+  let cartNum = document.querySelector("#cart-num");
+  let value = cartNum.innerHTML;
+  value++;
+  cartNum.innerHTML = value;
 }
