@@ -769,6 +769,7 @@ main {
 .carusel__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .carusel__bottom--btn {
@@ -779,17 +780,18 @@ main {
   border: 1px solid var(--very-light-gray-color-txt);
   box-shadow: 0.1rem 0.1rem 0.4rem var(--very-light-gray-color-txt);
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .carusel__bottom--info {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 3rem;
+  overflow: hidden;
 }
 
 /* card */
 .carusel__bottom--card {
-  border: 1px solid black;
   width: 16.2rem;
   height: 28.8rem;
   cursor: pointer;
@@ -807,13 +809,38 @@ main {
   display: flex;
 }
 
+.carusel__bottom--stars-icon-4 {
+  width: 8rem;
+  height: 1.5rem;
+  background: url("/assets/img/stars.png") -8.4rem -0.8rem;
+}
+
+.carusel__bottom--stars-icon-4_5 {
+  width: 8rem;
+  height: 1.5rem;
+  background: url("/assets/img/stars.png") -8.4rem -2.8rem;
+}
+
+.carusel__bottom--stars-icon-5 {
+  width: 8rem;
+  height: 1.5rem;
+  background: url("/assets/img/stars.png") -16.6rem -3.6rem;
+}
+
+.carusel__bottom--price--prime-icon {
+  width: 5.4rem;
+  height: 1.6rem;
+  background: url("/assets/img/main_right_img/follow_me_icons.png") -18.4rem -18.2rem;
+}
+
 .carusel__bottom--stars-num {
   color: #2b7174;
   font-size: 1.4rem;
+  padding-left: 1rem;
 }
 
 .carusel__bottom--price-num {
   color: #b12704;
   font-size: 1.8rem;
-  /* line-height: 1.2; */
+  padding-right: 1rem;
 }
