@@ -45,6 +45,15 @@ header {
   text-decoration: none;
 }
 
+.header-navbar__hover {
+  border: 1px transparent solid;
+  cursor: pointer;
+}
+
+.header-navbar__hover:hover {
+  border: 1px var(--light-color-txt) solid;
+}
+
 /********** header left **********/
 .header__left {
   display: flex;
@@ -58,10 +67,6 @@ header {
   background: url("/assets/img/header_img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png")
     0 -4.2rem;
   margin: 0 1rem;
-}
-
-.header-navbar__hover:hover {
-  border: 1px var(--light-color-txt) solid;
 }
 
 .header__left--location {
@@ -162,7 +167,6 @@ header {
 .header__right--orders,
 .header__right--cart {
   padding: 1rem;
-  margin: 0.5rem;
 }
 
 .header__right--flags a,
