@@ -783,6 +783,10 @@ main {
   cursor: pointer;
 }
 
+.carusel__bottom--btn:hover {
+  background: #f7fafa;
+}
+
 .carusel__bottom--info {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -845,4 +849,8 @@ main {
   color: #b12704;
   font-size: 1.8rem;
   padding-right: 1rem;
+}
+
+.myCards {
+  display: none;
 }

@@ -145,7 +145,7 @@ const cardInfo = document.querySelector(".carusel__bottom--info");
 
 (function enterCards(arr) {
   for (let i = 0; i < arr.length; i++) {
-    let info = `<div id="${cards[i].id}" class="carusel__bottom--card">
+    let info = `<div id="${cards[i].id}" class="carusel__bottom--card  myCards">
                 <img src="${cards[i].img}" alt="img socks">
                 <a class="main__center--links" href="${cards[i].href}" target="_blank">${cards[i].a}</a>
                 <div class="carusel__bottom--stars">
@@ -161,22 +161,23 @@ const cardInfo = document.querySelector(".carusel__bottom--info");
   }
 })(cards);
 
+let pageNum = 0;
+carusel(pageNum);
 
+function plusPage(num){
+    carusel(pageNum += num);
+}
 
-// const info = `<div id="${cards[0].id}" class="carusel__bottom--card">
-// <img src="${cards[0].img}" alt="img socks">
-// <a class="main__center--links" href="${cards[0].href}" target="_blank">${cards[0].a}</a>
-// <div class="carusel__bottom--stars">
-//   <div class="${cards[0].stars}"></div>
-//   <p class="carusel__bottom--stars-num">${cards[0].votes}</p>
-// </div>
-// <div class="carusel__bottom--price">
-//   <p class="carusel__bottom--price-num">${cards[0].price}</p>
-//   <div class="${cards[0].icon}"></div>
-// </div>
-// </div>`;
+function carusel(pageIdx){
+    let mycards = document.querySelectorAll('.myCards');
 
-// card.innerHTML = info;
+    if (pageIdx > cards.length - 6) {pageIdx = 0}
+    if (pageIdx < 1) {pageIdx = cards.length - 7}
 
-console.dir(card);
-console.dir(info);
+    for (let i = 0; i < mycards.length; i++) {
+        mycards[i].style.display = "none";
+    }
+    for (let j = pageIdx; j < pageIdx+6; j++) {
+        mycards[j].style.display = "block";
+    }
+}
